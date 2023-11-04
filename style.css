@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin: 50px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+.hero-section {
+  background-image: url(hero_image\ \(2\).png);
+  height: 90vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero-section h1 {
+  font-size: 96px;
+}
+.hero-section h3 {
+  font-size: 30px;
+}
+
+.music-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+.primary-btn {
+  background-color: var(--red600);
+  color: white;
+}
+.secondary-btn {
+  background-color: var(--purple300);
+  color: white;
+}
+
+.about-music {
+  padding-top: 100px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-section {
+  background-image: url(video.png);
+  min-height: 700px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-align: center;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 50px;
+}
+
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.gift-section {
+  scroll-margin: 120px;
+}
+
+.selectmusic{
+  width: 100%;
+  /* height: 1000px; */
+  background-color: black;
+}
+
+#selectmusic-h1{
+  font-size: 70px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+.music-row{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.music-box1{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+.music-box1 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+ 
+}
+.music-box1 h1{
+  font-size: 40px;
+}
+
+.music-box1 img:hover{
+  transform: scale(1.05);
+}
+.music-box2{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+
+}
+.music-box2 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box2 h1{
+  font-size: 40px;
+}
+
+.music-box2 img:hover{
+  transform: scale(1.05);
+}
+
+.music-box3{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+
+}
+.music-box3 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box3 h1{
+  font-size: 40px;
+}
+.music-box3 img:hover{
+  transform: scale(1.05);
+}
+.music-box4{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+
+}
+.music-box4 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box4 h1{
+  font-size: 40px;
+}
+.music-box4 img:hover{
+  transform: scale(1.05);
+}
+.music-box5{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+position: relative;
+}
+.music-box5 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box5 h1{
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+.music-box5 img:hover{
+  transform: scale(1.05);
+}
+.music-box6{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+position: relative;
+}
+.music-box6 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box6 h1{
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+.music-box6 img:hover{
+  transform: scale(1.05);
+}
+.music-box7{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+position: relative;
+}
+.music-box7 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box7 h1{
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+  left: 130px;
+}
+.music-box7 img:hover{
+  transform: scale(1.05);
+}
+.music-box8{
+  width: 25%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+position: relative;
+}
+.music-box8 img{
+  padding-top: 10px;
+  width: 95%;
+  height: 80%;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.music-box8 h1{
+  font-size: 40px;
+  position: absolute;
+  top: 200px;
+  left: 90px;
+}
+.music-box8 img:hover{
+  transform: scale(1.05);
+}
